@@ -1,0 +1,529 @@
+[26-Dec-2024 19:00:22 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 19:00:22 Europe/Berlin] Session user_id: 4
+[26-Dec-2024 19:00:22 Europe/Berlin] Request received with POST data: Array
+(
+    [id] => 1
+)
+
+[26-Dec-2024 19:00:22 Europe/Berlin] Appointment ID: 1
+[26-Dec-2024 19:00:22 Europe/Berlin] Available methods in Appointment class: Array
+(
+    [0] => __construct
+    [1] => getAll
+    [2] => create
+    [3] => update
+    [4] => delete
+    [5] => validateWorkingHours
+    [6] => updateStatus
+    [7] => getById
+)
+
+[26-Dec-2024 19:00:22 Europe/Berlin] Appointment data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [title] => Test Appointment
+    [date] => 2025-01-03
+    [time] => 11:00:00
+    [duration] => 30
+    [status] => scheduled
+    [notes] => 
+    [created_at] => 2024-12-26 22:46:28
+    [updated_at] => 2024-12-26 22:46:28
+    [patient_name] => Saurabh Thakur
+)
+
+[26-Dec-2024 19:00:22 Europe/Berlin] Available methods in Patient class: Array
+(
+    [0] => __construct
+    [1] => getAll
+    [2] => getOne
+    [3] => create
+    [4] => update
+    [5] => delete
+    [6] => sendEmail
+)
+
+[26-Dec-2024 19:00:22 Europe/Berlin] Patient data: 
+[26-Dec-2024 19:00:22 Europe/Berlin] Error in send_email.php: Patient email not found
+[26-Dec-2024 19:00:22 Europe/Berlin] Stack trace: #0 {main}
+[26-Dec-2024 19:02:02 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 19:02:02 Europe/Berlin] Processing appointment ID: 1
+[26-Dec-2024 19:02:02 Europe/Berlin] Appointment data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [title] => Test Appointment
+    [date] => 2025-01-03
+    [time] => 11:00:00
+    [duration] => 30
+    [status] => scheduled
+    [notes] => 
+    [created_at] => 2024-12-26 22:46:28
+    [updated_at] => 2024-12-26 22:46:28
+    [patient_name] => Saurabh Thakur
+)
+
+[26-Dec-2024 19:02:02 Europe/Berlin] Fetching patient ID: 1
+[26-Dec-2024 19:02:02 Europe/Berlin] Patient data: Array
+(
+    [id] => 1
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [email] => worlddj0@gmail.com
+    [phone] => 8087098711
+    [date_of_birth] => 1992-07-07
+    [gender] => male
+    [address] => West Bengal
+    [medical_history] => No History
+    [notes] => No Notes
+    [created_at] => 2024-12-26 20:42:02
+    [updated_at] => 2024-12-26 20:42:02
+    [user_id] => 4
+)
+
+[26-Dec-2024 19:02:02 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:02 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 19:02:02 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 19:02:02 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 19:02:03 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:04 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 19:02:02 +0100
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: ClinicFlow PRO <dentflowpro@gmail.com>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Your Appointment Confirmation
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <T1rnKqyvINtmyEezYLNMrmVYuvDjQcHMM6GiHPU7C80@localhost>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <html>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <body>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <h2>Appointment Confirmation</h2>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>This email confirms your appointment details:</p>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <ul>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Date:</strong> January 3, 2025</li>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Time:</strong> 11:00 AM</li>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Duration:</strong> 30 minutes</li>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Title:</strong> Test Appointment</li>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </ul>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>If you need to reschedule or cancel your appointment, please contact us.</p>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Thank you for choosing our services!</p>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </body>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </html>
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735236125 d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 19:02:05 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-72aad8157edsm13592280b3a.20 - gsmtp
+
+[26-Dec-2024 19:02:05 Europe/Berlin] Email sent successfully
+[26-Dec-2024 23:30:35 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 23:30:35 Europe/Berlin] Processing appointment ID: 1
+[26-Dec-2024 23:30:35 Europe/Berlin] Appointment data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [title] => Test Appointment
+    [date] => 2025-01-03
+    [time] => 11:00:00
+    [duration] => 30
+    [status] => completed
+    [notes] => 
+    [created_at] => 2024-12-26 22:46:28
+    [updated_at] => 2024-12-27 02:58:24
+    [patient_name] => Saurabh Thakur
+)
+
+[26-Dec-2024 23:30:35 Europe/Berlin] Fetching patient ID: 1
+[26-Dec-2024 23:30:35 Europe/Berlin] Patient data: Array
+(
+    [id] => 1
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [email] => worlddj0@gmail.com
+    [phone] => 8087098711
+    [date_of_birth] => 1992-07-07
+    [gender] => male
+    [address] => West Bengal
+    [medical_history] => No History
+    [notes] => No Notes
+    [created_at] => 2024-12-26 20:42:02
+    [updated_at] => 2024-12-26 20:42:02
+    [user_id] => 4
+)
+
+[26-Dec-2024 23:30:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:30:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:30:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 23:30:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 23:30:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 23:30:35 +0100
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: ClinicFlow PRO <dentflowpro@gmail.com>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Your Appointment Confirmation
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <TYJUXvnjUe9Bac7d3BKhEVRU4NwsHXY3aDQkSfOVg@localhost>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <html>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <body>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <h2>Appointment Confirmation</h2>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>This email confirms your appointment details:</p>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <ul>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Date:</strong> January 3, 2025</li>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Time:</strong> 11:00 AM</li>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Duration:</strong> 30 minutes</li>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Title:</strong> Test Appointment</li>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </ul>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>If you need to reschedule or cancel your appointment, please contact us.</p>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Thank you for choosing our services!</p>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </body>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </html>
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:30:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 23:30:39 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735252239 d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:39 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 23:30:39 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-72aad8fabc9sm13793922b3a.141 - gsmtp
+
+[26-Dec-2024 23:30:39 Europe/Berlin] Email sent successfully
+[26-Dec-2024 23:33:34 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 23:33:34 Europe/Berlin] Processing appointment ID: 1
+[26-Dec-2024 23:33:34 Europe/Berlin] Appointment data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [title] => Test Appointment
+    [date] => 2025-01-03
+    [time] => 11:00:00
+    [duration] => 30
+    [status] => completed
+    [notes] => 
+    [created_at] => 2024-12-26 22:46:28
+    [updated_at] => 2024-12-27 02:58:24
+    [patient_name] => Saurabh Thakur
+)
+
+[26-Dec-2024 23:33:34 Europe/Berlin] Fetching patient ID: 1
+[26-Dec-2024 23:33:34 Europe/Berlin] Patient data: Array
+(
+    [id] => 1
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [email] => worlddj0@gmail.com
+    [phone] => 8087098711
+    [date_of_birth] => 1992-07-07
+    [gender] => male
+    [address] => West Bengal
+    [medical_history] => No History
+    [notes] => No Notes
+    [created_at] => 2024-12-26 20:42:02
+    [updated_at] => 2024-12-26 20:42:02
+    [user_id] => 4
+)
+
+[26-Dec-2024 23:33:35 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:35 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:33:35 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:33:35 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 23:33:35 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 23:33:36 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 23:33:34 +0100
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: ClinicFlow PRO <dentflowpro@gmail.com>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Your Appointment Confirmation
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <xeglPWTQjBZsFrLbrag1VfHS4RDqz8tU7F7sqPOXQI@localhost>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <html>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <body>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <h2>Appointment Confirmation</h2>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>This email confirms your appointment details:</p>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <ul>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Date:</strong> January 3, 2025</li>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Time:</strong> 11:00 AM</li>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Duration:</strong> 30 minutes</li>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <li><strong>Title:</strong> Test Appointment</li>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </ul>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>If you need to reschedule or cancel your appointment, please contact us.</p>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Thank you for choosing our services!</p>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </body>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </html>
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:33:37 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 23:33:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735252418 d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:38 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 23:33:38 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-219dc9f51c2sm123961785ad.190 - gsmtp
+
+[26-Dec-2024 23:33:38 Europe/Berlin] Email sent successfully

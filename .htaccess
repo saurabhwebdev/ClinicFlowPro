@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /cfp/
+
+# Allow direct access to assets
+RewriteCond %{REQUEST_URI} !^/cfp/assets/
+# Allow direct access to modules
+RewriteCond %{REQUEST_URI} !^/cfp/modules/
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, redirect to index.php
+RewriteRule ^(.*)$ index.php [QSA,L] 

@@ -1,0 +1,3769 @@
+[26-Dec-2024 21:59:19 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 21:59:19 Europe/Berlin] Processing invoice ID: 1
+[26-Dec-2024 21:59:19 Europe/Berlin] Invoice data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 9400.00
+    [tax_rate] => 18.00
+    [tax_amount] => 0.00
+    [discount_type] => percentage
+    [discount_value] => 2.00
+    [discount_amount] => 0.00
+    [total_amount] => 9400.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => This is a test invoice.
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"1200"},{"description":"Item 2","quantity":"2","unit_price":"2300"}]
+    [created_at] => 2024-12-27 02:18:05
+    [updated_at] => 2024-12-27 02:18:05
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 21:59:19 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 21:59:20 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:20 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 21:59:20 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 21:59:20 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 21:59:20 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 21:59:21 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 21:59:19 +0100
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <VuQbnP7LBV3LOaPcVa5jNnV3Xmn4oBVwGZocH2g5RM@localhost>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_VuQbnP7LBV3LOaPcVa5jNnV3Xmn4oBVwGZocH2g5RM"
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_VuQbnP7LBV3LOaPcVa5jNnV3Xmn4oBVwGZocH2g5RM
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 2
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 2
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         9,400.00
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         This is a test invoice.
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_VuQbnP7LBV3LOaPcVa5jNnV3Xmn4oBVwGZocH2g5RM
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 2</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>2</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>9,400.00</strong></td>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>This is a test invoice.</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_VuQbnP7LBV3LOaPcVa5jNnV3Xmn4oBVwGZocH2g5RM--
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 21:59:22 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 21:59:23 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735246763 d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:23 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 21:59:23 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-219dc970c84sm123716195ad.58 - gsmtp
+
+[26-Dec-2024 21:59:23 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:01:12 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:01:12 Europe/Berlin] Processing invoice ID: 1
+[26-Dec-2024 22:01:12 Europe/Berlin] Invoice data: Array
+(
+    [id] => 1
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 9400.00
+    [tax_rate] => 18.00
+    [tax_amount] => 0.00
+    [discount_type] => percentage
+    [discount_value] => 2.00
+    [discount_amount] => 0.00
+    [total_amount] => 9400.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => This is a test invoice.
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"1200"},{"description":"Item 2","quantity":"2","unit_price":"2300"}]
+    [created_at] => 2024-12-27 02:18:05
+    [updated_at] => 2024-12-27 02:18:05
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 69
+[26-Dec-2024 22:01:12 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:01:12 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:12 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:01:12 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:01:12 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:01:12 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:01:13 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:01:12 +0100
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <JxZ30jbmLVUP3wrwT8n8fiNe3VJtynyZUtC3w8rVA@localhost>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_JxZ30jbmLVUP3wrwT8n8fiNe3VJtynyZUtC3w8rVA"
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_JxZ30jbmLVUP3wrwT8n8fiNe3VJtynyZUtC3w8rVA
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 2
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 2
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 0.00
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         9,400.00
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         This is a test invoice.
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_JxZ30jbmLVUP3wrwT8n8fiNe3VJtynyZUtC3w8rVA
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 2</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>2</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>0.00</td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>9,400.00</strong></td>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>This is a test invoice.</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_JxZ30jbmLVUP3wrwT8n8fiNe3VJtynyZUtC3w8rVA--
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:01:14 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:01:15 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735246875 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:15 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:01:15 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-2f447883b17sm14437727a91.40 - gsmtp
+
+[26-Dec-2024 22:01:15 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:42:54 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:42:55 Europe/Berlin] Processing invoice ID: 2
+[26-Dec-2024 22:42:55 Europe/Berlin] Invoice data: Array
+(
+    [id] => 2
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 8000.00
+    [tax_rate] => 12.00
+    [tax_amount] => 0.00
+    [discount_type] => fixed
+    [discount_value] => 0.00
+    [discount_amount] => 0.00
+    [total_amount] => 8000.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => Sample Invoice
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"2000"}]
+    [created_at] => 2024-12-27 03:12:41
+    [updated_at] => 2024-12-27 03:12:41
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:42:55 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:42:55 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:42:55 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 72
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:42:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:42:57 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:42:55 +0100
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <GTVbSOPrVjbAXMUnUMfML3t6GhUONEzhKXEc8sI5E@localhost>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_GTVbSOPrVjbAXMUnUMfML3t6GhUONEzhKXEc8sI5E"
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_GTVbSOPrVjbAXMUnUMfML3t6GhUONEzhKXEc8sI5E
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 0.00
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 0.00
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Sample Invoice
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_GTVbSOPrVjbAXMUnUMfML3t6GhUONEzhKXEc8sI5E
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>Sample Invoice</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_GTVbSOPrVjbAXMUnUMfML3t6GhUONEzhKXEc8sI5E--
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:42:58 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:43:09 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735249389 d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:43:09 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:43:09 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-219dc96eb12sm124839615ad.87 - gsmtp
+
+[26-Dec-2024 22:43:09 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:45:50 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:45:50 Europe/Berlin] Processing invoice ID: 2
+[26-Dec-2024 22:45:50 Europe/Berlin] Invoice data: Array
+(
+    [id] => 2
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 8000.00
+    [tax_rate] => 12.00
+    [tax_amount] => 0.00
+    [discount_type] => fixed
+    [discount_value] => 0.00
+    [discount_amount] => 0.00
+    [total_amount] => 8000.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => Sample Invoice
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"2000"}]
+    [created_at] => 2024-12-27 03:12:41
+    [updated_at] => 2024-12-27 03:12:41
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:45:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:45:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:45:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:45:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:45:50 +0100
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <3gFHW3puW9a3EZeP2SP9t7R81w5CkSF462RUxR1fJtA@localhost>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_3gFHW3puW9a3EZeP2SP9t7R81w5CkSF462RUxR1fJtA"
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_3gFHW3puW9a3EZeP2SP9t7R81w5CkSF462RUxR1fJtA
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 2,000.00
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 8,000.00
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Sample Invoice
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_3gFHW3puW9a3EZeP2SP9t7R81w5CkSF462RUxR1fJtA
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 2,000.00</td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 8,000.00</td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>Sample Invoice</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_3gFHW3puW9a3EZeP2SP9t7R81w5CkSF462RUxR1fJtA--
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:45:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:45:54 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735249554 d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:54 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:45:54 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-219dc9d4c89sm121286275ad.124 - gsmtp
+
+[26-Dec-2024 22:45:54 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:47:51 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:47:51 Europe/Berlin] Processing invoice ID: 2
+[26-Dec-2024 22:47:51 Europe/Berlin] Invoice data: Array
+(
+    [id] => 2
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 8000.00
+    [tax_rate] => 12.00
+    [tax_amount] => 0.00
+    [discount_type] => fixed
+    [discount_value] => 0.00
+    [discount_amount] => 0.00
+    [total_amount] => 8000.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => Sample Invoice
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"2000"}]
+    [created_at] => 2024-12-27 03:12:41
+    [updated_at] => 2024-12-27 03:12:41
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:47:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:47:53 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:47:53 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:47:53 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:47:54 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:47:54 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:47:54 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:47:54 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:47:54 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:47:55 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:47:55 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:47:51 +0100
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <sc1Ezj2Yqzl6Dd2wBXcQxJibrtNd7SBZ3V4gE88Uak@localhost>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_sc1Ezj2Yqzl6Dd2wBXcQxJibrtNd7SBZ3V4gE88Uak"
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_sc1Ezj2Yqzl6Dd2wBXcQxJibrtNd7SBZ3V4gE88Uak
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 2,000.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 8,000.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Subtotal:
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Tax (12.00%):
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 0.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Discount:
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 0.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Sample Invoice
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_sc1Ezj2Yqzl6Dd2wBXcQxJibrtNd7SBZ3V4gE88Uak
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 2,000.00</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 8,000.00</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Subtotal:</strong></td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Tax (12.00%):</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Discount:</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>Sample Invoice</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_sc1Ezj2Yqzl6Dd2wBXcQxJibrtNd7SBZ3V4gE88Uak--
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:47:56 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:47:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735249677 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:57 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:47:57 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-2f2db9ca30asm10892774a91.1 - gsmtp
+
+[26-Dec-2024 22:47:57 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:51:48 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:51:48 Europe/Berlin] Processing invoice ID: 2
+[26-Dec-2024 22:51:48 Europe/Berlin] Invoice data: Array
+(
+    [id] => 2
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 8000.00
+    [tax_rate] => 12.00
+    [tax_amount] => 0.00
+    [discount_type] => percentage
+    [discount_value] => 1.00
+    [discount_amount] => 0.00
+    [total_amount] => 8000.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => Sample Invoice
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"2000"}]
+    [created_at] => 2024-12-27 03:12:41
+    [updated_at] => 2024-12-27 03:21:06
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:51:48 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:51:48 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 70
+[26-Dec-2024 22:51:48 Europe/Berlin] PHP Warning:  Undefined array key "price" in C:\xampp\htdocs\cfp\modules\invoices\send_email.php on line 72
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:51:49 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:51:50 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:51:48 +0100
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <7lDLuYw8r4bRi09MlA403spqe5cUFmqCwj0U1Apa6xo@localhost>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_7lDLuYw8r4bRi09MlA403spqe5cUFmqCwj0U1Apa6xo"
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_7lDLuYw8r4bRi09MlA403spqe5cUFmqCwj0U1Apa6xo
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 0.00
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 0.00
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Sample Invoice
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_7lDLuYw8r4bRi09MlA403spqe5cUFmqCwj0U1Apa6xo
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 0.00</td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>Sample Invoice</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_7lDLuYw8r4bRi09MlA403spqe5cUFmqCwj0U1Apa6xo--
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:51:51 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:51:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735249912 d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:52 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:51:52 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-72aad837395sm13884426b3a.69 - gsmtp
+
+[26-Dec-2024 22:51:52 Europe/Berlin] Email sent successfully
+[26-Dec-2024 22:52:59 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 22:52:59 Europe/Berlin] Processing invoice ID: 2
+[26-Dec-2024 22:52:59 Europe/Berlin] Invoice data: Array
+(
+    [id] => 2
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0001
+    [status] => draft
+    [subtotal] => 8000.00
+    [tax_rate] => 12.00
+    [tax_amount] => 0.00
+    [discount_type] => percentage
+    [discount_value] => 1.00
+    [discount_amount] => 0.00
+    [total_amount] => 8000.00
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-25
+    [notes] => Sample Invoice
+    [items] => [{"description":"Item 1","quantity":"4","unit_price":"2000"}]
+    [created_at] => 2024-12-27 03:12:41
+    [updated_at] => 2024-12-27 03:21:06
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [patient_phone] => 8087098711
+    [patient_address] => West Bengal
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 22:52:59 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:52:59 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:52:59 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:52:59 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 22:52:59 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 22:53:00 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 22:52:59 +0100
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0001 from Curadent
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <zOhJRKY4iTu3WtMbYwGUcwUUXLImBlnGHDVO7WcKoY@localhost>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_zOhJRKY4iTu3WtMbYwGUcwUUXLImBlnGHDVO7WcKoY"
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zOhJRKY4iTu3WtMbYwGUcwUUXLImBlnGHDVO7WcKoY
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0001
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 25, 2025
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Item 1
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 4
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 2,000.00
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 8,000.00
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 8,000.00
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Notes
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Sample Invoice
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zOhJRKY4iTu3WtMbYwGUcwUUXLImBlnGHDVO7WcKoY
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0001</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 25, 2025</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>Item 1</td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>4</td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 2,000.00</td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 8,000.00</td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 8,000.00</strong></td>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <h3 style='color: #0d6efd;'>Notes</h3>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <p>Sample Invoice</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </div>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zOhJRKY4iTu3WtMbYwGUcwUUXLImBlnGHDVO7WcKoY--
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 22:53:01 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 22:53:02 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735249982 d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:53:02 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 22:53:03 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-219dc9cdf25sm123562795ad.118 - gsmtp
+
+[26-Dec-2024 22:53:03 Europe/Berlin] Email sent successfully
+[26-Dec-2024 23:13:07 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 23:13:07 Europe/Berlin] Processing invoice ID: 4
+[26-Dec-2024 23:13:07 Europe/Berlin] Invoice data: Array
+(
+    [id] => 4
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0003
+    [status] => sent
+    [subtotal] => 1200.00
+    [tax_rate] => 12.00
+    [tax_amount] => 144
+    [discount_type] => percentage
+    [discount_value] => 2.00
+    [discount_amount] => 24
+    [total_amount] => 1320
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-01
+    [notes] => 
+    [items] => [{"description":"item 3","quantity":"1","unit_price":"1200"}]
+    [created_at] => 2024-12-27 03:28:01
+    [updated_at] => 2024-12-27 03:40:42
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 23:13:08 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:08 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:13:08 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:13:08 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 23:13:08 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 23:13:09 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 23:13:07 +0100
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0003 from Curadent
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <kO9LTeIxnHaij02i7yzhTCIeBYCdYwzRWkowUM@localhost>
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_kO9LTeIxnHaij02i7yzhTCIeBYCdYwzRWkowUM"
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_kO9LTeIxnHaij02i7yzhTCIeBYCdYwzRWkowUM
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0003
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 01, 2025
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 item 3
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 1
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 1,200.00
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 1,200.00
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:13:10 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total Amount:
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 1,320.00
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_kO9LTeIxnHaij02i7yzhTCIeBYCdYwzRWkowUM
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0003</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 01, 2025</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>item 3</td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>1</td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 1,200.00</td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 1,200.00</td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Total Amount:</strong></td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 1,320.00</strong></td>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_kO9LTeIxnHaij02i7yzhTCIeBYCdYwzRWkowUM--
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:13:11 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 23:13:12 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735251192 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:12 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 23:13:12 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-2f2ed644846sm17981498a91.28 - gsmtp
+
+[26-Dec-2024 23:13:12 Europe/Berlin] Email sent successfully
+[26-Dec-2024 23:14:25 Europe/Berlin] Session data: Array
+(
+    [user_id] => 4
+    [email] => worlddj0@gmail.com
+    [first_name] => Saurabh
+    [last_name] => Thakur
+    [subscription_status] => active
+)
+
+[26-Dec-2024 23:14:25 Europe/Berlin] Processing invoice ID: 4
+[26-Dec-2024 23:14:25 Europe/Berlin] Invoice data: Array
+(
+    [id] => 4
+    [user_id] => 4
+    [patient_id] => 1
+    [appointment_id] => 
+    [invoice_number] => INV-202412-0003
+    [status] => sent
+    [subtotal] => 1200.00
+    [tax_rate] => 12.00
+    [tax_amount] => 144
+    [discount_type] => percentage
+    [discount_value] => 2.00
+    [discount_amount] => 24
+    [total_amount] => 1320
+    [payment_method] => 
+    [payment_date] => 
+    [due_date] => 2025-01-01
+    [notes] => 
+    [items] => [{"description":"item 3","quantity":"1","unit_price":"1200"}]
+    [created_at] => 2024-12-27 03:28:01
+    [updated_at] => 2024-12-27 03:40:42
+    [patient_name] => Saurabh Thakur
+    [patient_email] => worlddj0@gmail.com
+    [appointment_date] => 
+    [appointment_time] => 
+)
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: STARTTLS
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[26-Dec-2024 23:14:26 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: EHLO localhost
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2401:4900:1cba:b411:30ad:89b5:cb38:4bf0]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: AUTH LOGIN
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: [credentials hidden]
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[26-Dec-2024 23:14:27 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MAIL FROM:<dentflowpro@gmail.com>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: RCPT TO:<worlddj0@gmail.com>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: DATA
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Date: Thu, 26 Dec 2024 23:14:25 +0100
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: To: Saurabh Thakur <worlddj0@gmail.com>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: From: Curadent <dentflowpro@gmail.com>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Subject: Invoice #INV-202412-0003 from Curadent
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Message-ID: <zST0L7DHylgbJwVisx5yo0kzaiSvfqSMexJeTMGJI@localhost>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: MIME-Version: 1.0
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:  boundary="b1=_zST0L7DHylgbJwVisx5yo0kzaiSvfqSMexJeTMGJI"
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zST0L7DHylgbJwVisx5yo0kzaiSvfqSMexJeTMGJI
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Curadent
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Kritilaxmi Jha
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Prosthodontics
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Dear Saurabh Thakur,
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 Please find your invoice details below:
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Invoice Number: INV-202412-0003
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Date: December 27, 2024
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Due Date: January 01, 2025
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Description
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Quantity
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Price
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Total
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 item 3
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 1
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 1,200.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 INR 1,200.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         Subtotal:
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         INR 1,200.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                     Tax (12.00%):
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 INR 144.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                     Discount (2.00%):
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 -INR 24.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             Total Amount:
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             INR 1,320.00
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Contact Information:
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Phone: 8087098711
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Email: hellocuradent@gmail.com
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zST0L7DHylgbJwVisx5yo0kzaiSvfqSMexJeTMGJI
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; margin-bottom: 20px;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <h2 style='color: #0d6efd; margin: 0;'>Curadent</h2>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Kritilaxmi Jha</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p style='margin: 5px 0;'>Prosthodontics</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Dear Saurabh Thakur,</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <p>Please find your invoice details below:</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-bottom: 20px;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Invoice Number:</strong> INV-202412-0003</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Date:</strong> December 27, 2024</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Due Date:</strong> January 01, 2025</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <table style='width: 100%; border-collapse: collapse; margin-bottom: 20px;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr style='background: #f8f9fa;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd;'>Description</th>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Quantity</th>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Price</th>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <th style='padding: 8px; border: 1px solid #ddd; text-align: right;'>Total</th>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             <tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd;'>item 3</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>1</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 1,200.00</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 1,200.00</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>Subtotal:</strong></td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'><strong>INR 1,200.00</strong></td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             <tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                     <strong>Tax (12.00%):</strong>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 </td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>INR 144.00</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             <tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                     <strong>Discount (2.00%):</strong>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 </td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                                 <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>-INR 24.00</td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td colspan='3' style='padding: 8px; border: 1px solid #ddd; text-align: right;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             <strong>Total Amount:</strong>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         </td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         <td style='padding: 8px; border: 1px solid #ddd; text-align: right;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                             <strong>INR 1,320.00</strong>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                         </td>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     </tr>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </table>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 <div style='margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;'>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p><strong>Contact Information:</strong></p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Phone: 8087098711</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Email: hellocuradent@gmail.com</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                     <p>Address: 301, next to Karnataka Bank, Kasturi Nagar, Bengaluru, Karnataka 560043</p>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:                 </div>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:             </div>
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER:         
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: --b1=_zST0L7DHylgbJwVisx5yo0kzaiSvfqSMexJeTMGJI--
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: 
+
+[26-Dec-2024 23:14:28 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: .
+
+[26-Dec-2024 23:14:29 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 250 2.0.0 OK  1735251269 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:29 Europe/Berlin] PHPMailer [1] : CLIENT -> SERVER: QUIT
+
+[26-Dec-2024 23:14:29 Europe/Berlin] PHPMailer [2] : SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-2f2ed52cf9esm17950357a91.8 - gsmtp
+
+[26-Dec-2024 23:14:29 Europe/Berlin] Email sent successfully
