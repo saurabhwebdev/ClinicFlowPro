@@ -85,6 +85,11 @@ if (!defined('BASE_URL')) {
                                 </a>
                             </li>
                             <li>
+                                <a class="dropdown-item" href="<?php echo BASE_URL; ?>/modules/inventory/">
+                                    <i class="fas fa-boxes me-2"></i> Inventory Management
+                                </a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item" href="<?php echo BASE_URL; ?>/modules/reports/index.php">
                                     <i class="fas fa-chart-bar me-2"></i> Reports
                                 </a>
