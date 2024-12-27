@@ -175,6 +175,277 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_email'])) {
                         </div>
                     </div>
                 </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-calendar-alt me-2"></i>Appointment History
+                        </h5>
+                        <a href="../appointments/index.php?patient_id=<?php echo $patientId; ?>" 
+                           class="btn btn-light btn-sm">
+                            <i class="fas fa-plus me-1"></i>New Appointment
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                        require_once '../appointments/models/Appointment.php';
+                        $appointment = new Appointment();
+                        $appointments = $appointment->getAll($_SESSION['user_id'], ['patient_id' => $patientId]);
+                        
+                        if (empty($appointments)): ?>
+                            <p class="text-muted text-center mb-0">
+                                <i class="fas fa-info-circle me-1"></i>No appointments found for this patient
+                            </p>
+                        <?php else: ?>
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Date & Time</th>
+                                            <th>Title</th>
+                                            <th>Duration</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($appointments as $apt): ?>
+                                            <tr>
+                                                <td>
+                                                    <div class="fw-medium">
+                                                        <?php echo date('M j, Y', strtotime($apt['date'])); ?>
+                                                    </div>
+                                                    <small class="text-muted">
+                                                        <?php echo date('g:i A', strtotime($apt['time'])); ?>
+                                                    </small>
+                                                </td>
+                                                <td><?php echo htmlspecialchars($apt['title']); ?></td>
+                                                <td><?php echo $apt['duration']; ?> mins</td>
+                                                <td>
+                                                    <?php 
+                                                    $statusClass = match($apt['status']) {
+                                                        'scheduled' => 'primary',
+                                                        'completed' => 'success',
+                                                        'cancelled' => 'danger',
+                                                        'rescheduled' => 'warning',
+                                                        default => 'secondary'
+                                                    };
+                                                    ?>
+                                                    <span class="badge bg-<?php echo $statusClass; ?>">
+                                                        <?php echo ucfirst($apt['status']); ?>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="../appointments/index.php?id=<?php echo $apt['id']; ?>" 
+                                                           class="btn btn-sm btn-outline-primary" title="View Details">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <?php if ($apt['status'] === 'scheduled'): ?>
+                                                            <button type="button" 
+                                                                    class="btn btn-sm btn-outline-success"
+                                                                    onclick="updateStatus(<?php echo $apt['id']; ?>, 'completed')"
+                                                                    title="Mark as Completed">
+                                                                <i class="fas fa-check"></i>
+                                                            </button>
+                                                            <button type="button" 
+                                                                    class="btn btn-sm btn-outline-danger"
+                                                                    onclick="updateStatus(<?php echo $apt['id']; ?>, 'cancelled')"
+                                                                    title="Cancel Appointment">
+                                                                <i class="fas fa-times"></i>
+                                                            </button>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-prescription me-2"></i>Prescription History
+                        </h5>
+                        <a href="../prescriptions/index.php?patient_id=<?php echo $patientId; ?>" 
+                           class="btn btn-light btn-sm">
+                            <i class="fas fa-plus me-1"></i>New Prescription
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                        require_once '../prescriptions/models/Prescription.php';
+                        $prescription = new Prescription();
+                        $prescriptions = $prescription->getAll($_SESSION['user_id'], ['patient_id' => $patientId]);
+                        
+                        if (empty($prescriptions)): ?>
+                            <p class="text-muted text-center mb-0">
+                                <i class="fas fa-info-circle me-1"></i>No prescriptions found for this patient
+                            </p>
+                        <?php else: ?>
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Diagnosis</th>
+                                            <th>Medications</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($prescriptions as $rx): ?>
+                                            <tr>
+                                                <td>
+                                                    <div class="fw-medium">
+                                                        <?php echo date('M j, Y', strtotime($rx['created_at'])); ?>
+                                                    </div>
+                                                    <?php if ($rx['appointment_date']): ?>
+                                                        <small class="text-muted">
+                                                            Appointment: <?php echo date('M j, Y', strtotime($rx['appointment_date'])); ?>
+                                                        </small>
+                                                    <?php endif; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo htmlspecialchars($rx['diagnosis']); ?>
+                                                </td>
+                                                <td>
+                                                    <?php 
+                                                    $medications = json_decode($rx['medications'], true);
+                                                    if (!empty($medications)): 
+                                                        foreach ($medications as $med): ?>
+                                                            <div class="small">
+                                                                <strong><?php echo htmlspecialchars($med['name']); ?></strong>
+                                                                - <?php echo htmlspecialchars($med['dosage']); ?>
+                                                                (<?php echo htmlspecialchars($med['frequency']); ?>)
+                                                            </div>
+                                                        <?php endforeach;
+                                                    endif; ?>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="../prescriptions/view.php?id=<?php echo $rx['id']; ?>" 
+                                                           class="btn btn-sm btn-outline-primary" title="View Details">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <button type="button" 
+                                                                class="btn btn-sm btn-outline-info"
+                                                                onclick="sendPrescriptionEmail(<?php echo $rx['id']; ?>)"
+                                                                title="Email Prescription">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-file-invoice-dollar me-2"></i>Invoice History
+                        </h5>
+                        <a href="../invoices/create.php?patient_id=<?php echo $patientId; ?>" 
+                           class="btn btn-light btn-sm">
+                            <i class="fas fa-plus me-1"></i>New Invoice
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                        require_once '../invoices/models/Invoice.php';
+                        $invoice = new Invoice();
+                        $invoices = $invoice->getAll($_SESSION['user_id'], ['patient_id' => $patientId]);
+                        
+                        if (empty($invoices)): ?>
+                            <p class="text-muted text-center mb-0">
+                                <i class="fas fa-info-circle me-1"></i>No invoices found for this patient
+                            </p>
+                        <?php else: ?>
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Invoice #</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($invoices as $inv): ?>
+                                            <tr>
+                                                <td>
+                                                    <div class="fw-medium">
+                                                        <?php echo htmlspecialchars($inv['invoice_number']); ?>
+                                                    </div>
+                                                    <?php if ($inv['appointment_date']): ?>
+                                                        <small class="text-muted">
+                                                            Appointment: <?php echo date('M j, Y', strtotime($inv['appointment_date'])); ?>
+                                                        </small>
+                                                    <?php endif; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo date('M j, Y', strtotime($inv['created_at'])); ?>
+                                                </td>
+                                                <td>
+                                                    <strong>
+                                                        <?php echo number_format($inv['total_amount'], 2); ?>
+                                                    </strong>
+                                                </td>
+                                                <td>
+                                                    <?php 
+                                                    $statusClass = match($inv['status']) {
+                                                        'paid' => 'success',
+                                                        'pending' => 'warning',
+                                                        'overdue' => 'danger',
+                                                        'cancelled' => 'secondary',
+                                                        default => 'primary'
+                                                    };
+                                                    ?>
+                                                    <span class="badge bg-<?php echo $statusClass; ?>">
+                                                        <?php echo ucfirst($inv['status']); ?>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="../invoices/view.php?id=<?php echo $inv['id']; ?>" 
+                                                           class="btn btn-sm btn-outline-primary" title="View Invoice">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <button type="button" 
+                                                                class="btn btn-sm btn-outline-info"
+                                                                onclick="sendInvoiceEmail(<?php echo $inv['id']; ?>)"
+                                                                title="Email Invoice">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </button>
+                                                        <?php if ($inv['status'] === 'pending'): ?>
+                                                            <button type="button" 
+                                                                    class="btn btn-sm btn-outline-success"
+                                                                    onclick="markAsPaid(<?php echo $inv['id']; ?>)"
+                                                                    title="Mark as Paid">
+                                                                <i class="fas fa-check"></i>
+                                                            </button>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </div>
 
             <!-- Quick Actions -->
@@ -318,6 +589,122 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_email'])) {
             alertDiv.style.opacity = '0';
             setTimeout(() => alertDiv.remove(), 500);
         }, 5000);
+    }
+
+    function updateStatus(appointmentId, status) {
+        if (confirm(`Are you sure you want to mark this appointment as ${status}?`)) {
+            fetch('../appointments/update_status.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `id=${appointmentId}&status=${status}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.error || 'Failed to update appointment status');
+                }
+            })
+            .catch(error => {
+                alert('An error occurred. Please try again.');
+            });
+        }
+    }
+
+    function sendPrescriptionEmail(prescriptionId) {
+        if (confirm('Send prescription details to the patient?')) {
+            const button = event.target.closest('button');
+            const originalHtml = button.innerHTML;
+            
+            // Disable button and show loading state
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            
+            fetch('../prescriptions/send_email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `id=${prescriptionId}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('success', 'Prescription sent successfully!');
+                } else {
+                    throw new Error(data.error || 'Failed to send prescription');
+                }
+            })
+            .catch(error => {
+                showAlert('danger', error.message);
+            })
+            .finally(() => {
+                // Reset button state
+                button.disabled = false;
+                button.innerHTML = originalHtml;
+            });
+        }
+    }
+
+    function sendInvoiceEmail(invoiceId) {
+        if (confirm('Send invoice to the patient?')) {
+            const button = event.target.closest('button');
+            const originalHtml = button.innerHTML;
+            
+            // Disable button and show loading state
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            
+            fetch('../invoices/send_email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `id=${invoiceId}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('success', 'Invoice sent successfully!');
+                } else {
+                    throw new Error(data.error || 'Failed to send invoice');
+                }
+            })
+            .catch(error => {
+                showAlert('danger', error.message);
+            })
+            .finally(() => {
+                // Reset button state
+                button.disabled = false;
+                button.innerHTML = originalHtml;
+            });
+        }
+    }
+
+    function markAsPaid(invoiceId) {
+        if (confirm('Mark this invoice as paid?')) {
+            fetch('../invoices/update_status.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `id=${invoiceId}&status=paid`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    throw new Error(data.error || 'Failed to update invoice status');
+                }
+            })
+            .catch(error => {
+                showAlert('danger', error.message);
+            });
+        }
     }
     </script>
 </body>
