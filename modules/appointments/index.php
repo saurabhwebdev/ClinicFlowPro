@@ -23,6 +23,8 @@ if (isset($_GET['error'])) {
 // Initialize models
 $appointment = new Appointment();
 $settings = new Settings();
+$patient = new Patient();
+$patients = $patient->getAll($_SESSION['user_id']);
 
 // Get clinic settings
 $clinicSettings = $settings->getSettings($_SESSION['user_id']);
@@ -48,6 +50,10 @@ $total_pages = ceil($total_appointments / $per_page);
 $offset = ($page - 1) * $per_page;
 
 $appointments = $appointment->getAllPaginated($_SESSION['user_id'], $filters, $offset, $per_page);
+
+// Initialize Patient model and get all patients
+$patient = new Patient();
+$patients = $patient->getAll($_SESSION['user_id']);
 ?>
 
 <!DOCTYPE html>

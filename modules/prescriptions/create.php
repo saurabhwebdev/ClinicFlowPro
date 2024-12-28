@@ -38,7 +38,6 @@ try {
     $prescription->medications = json_encode($medications);
     
     if ($prescription->create()) {
-        // Redirect to index page with success message
         header('Location: index.php?message=' . urlencode('Prescription created successfully'));
         exit;
     } else {
@@ -46,7 +45,6 @@ try {
     }
     
 } catch (Exception $e) {
-    // Redirect to index page with error message
     header('Location: index.php?error=' . urlencode($e->getMessage()));
     exit;
 } 

@@ -16,7 +16,7 @@ $patient->id = $_GET['id'] ?? 0;
 $patient->user_id = $_SESSION['user_id'];
 
 // Get patient data
-$patientData = $patient->getOne();
+$patientData = $patient->getOne($patient->id);
 if (!$patientData) {
     header('Location: index.php?error=' . urlencode('Patient not found'));
     exit;

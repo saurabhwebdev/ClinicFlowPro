@@ -21,6 +21,8 @@ if (isset($_GET['error'])) {
 
 // Initialize models
 $prescription = new Prescription();
+$patient = new Patient();
+$patients = $patient->getAll($_SESSION['user_id']);
 
 // Pagination settings
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -204,7 +206,7 @@ $prescriptions = $prescription->getAllPaginated($_SESSION['user_id'], $filters, 
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="prescriptionForm" action="create.php" method="POST">
+                    <form id="prescriptionForm" method="POST" action="create.php">
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label class="form-label">Patient</label>
@@ -249,11 +251,14 @@ $prescriptions = $prescription->getAllPaginated($_SESSION['user_id'], $filters, 
                             <label class="form-label">Notes</label>
                             <textarea class="form-control" name="notes" rows="2"></textarea>
                         </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save me-1"></i> Save Prescription
+                            </button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" form="prescriptionForm" class="btn btn-primary">Save Prescription</button>
                 </div>
             </div>
         </div>
@@ -501,18 +506,17 @@ $prescriptions = $prescription->getAllPaginated($_SESSION['user_id'], $filters, 
         }
     }
 
-    // Update the form submission in the JavaScript section
+    // Update the form submission code
     document.getElementById('prescriptionForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+        // Don't prevent default - we want the form to submit normally
         
-        // Show loading state
+        // Find the submit button within the form
         const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Saving...';
-        
-        // Submit the form
-        this.submit();
+        if (submitBtn) {  // Only modify the button if it exists
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Saving...';
+        }
     });
     </script>
 </body>
